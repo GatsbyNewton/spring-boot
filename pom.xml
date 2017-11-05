@@ -8,6 +8,7 @@
   <modules>
     <module>spring-boot-data-jpa</module>
     <module>spring-boot-mybatis-xml</module>
+    <module>spring-boot-email</module>
   </modules>
   <packaging>pom</packaging>
 
