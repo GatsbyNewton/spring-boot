@@ -26,6 +26,10 @@ public class CityService {
         cityRepository.save(city);
     }
 
+    public void batchInsert(List<City> cities){
+
+    }
+
     public List<City> findAl(){
         return cityRepository.find();
     }

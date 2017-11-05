@@ -15,15 +15,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @EnableTransactionManagement
 @EnableSpringDataWebSupport
-@EnableAutoConfiguration
 @SpringBootApplication
 @EnableJpaRepositories(value = "edu.wzm.repository")
-public class App{
+public class DataJpaApplication {
 
     @Autowired
     CityRepository cityRepository;
 
     public static void main( String[] args ) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(DataJpaApplication.class, args);
     }
 }
