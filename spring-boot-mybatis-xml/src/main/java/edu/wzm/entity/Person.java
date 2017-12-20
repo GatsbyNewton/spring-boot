@@ -1,4 +1,4 @@
-package edu.wzm.entities;
+package edu.wzm.entity;
 
 public class Person {
 

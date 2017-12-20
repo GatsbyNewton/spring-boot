@@ -1,7 +1,7 @@
-package edu.wzm.services;
+package edu.wzm.service;
 
 import edu.wzm.dao.PersonDao;
-import edu.wzm.entities.Person;
+import edu.wzm.entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
