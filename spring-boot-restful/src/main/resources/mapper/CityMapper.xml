@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.wzm.dao.CityDao">
+  <insert id="addOne" parameterType="City">
+    insert into city(country, name, state, map)
+    values(#{city.country}, #{city.name}, #{city.state}, #{city.map})
+  </insert>
+  
+  <insert id="addBatch" parameterType="java.util.List">
+    insert into city(country, name, state, map)
+    values
+    
+    <foreach collection="cities" item="city" index="index" separator=",">
+      (#{city.country}, #{city.name}, #{city.state}, #{city.map})
+    </foreach>
+  </insert>
+</mapper>
