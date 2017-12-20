@@ -7,7 +7,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-mybatis-xml</artifactId>
+    <artifactId>spring-boot-mybatis-xml</artifactId>
     <packaging>jar</packaging>
 
     <name>spring-boot-mybatis-xml</name>
