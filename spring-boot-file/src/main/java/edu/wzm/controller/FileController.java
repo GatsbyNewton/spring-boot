@@ -42,7 +42,7 @@ public class FileController {
 
         List<City> cities = fileService.findAll();
         /** header of BOM_UTF8 */
-        byte[] bomUTF8 = new byte[] {(byte) 0xef, (byte) 0xbb, (byte) 0xbf};
+        byte[] bomUTF8 = {(byte) 0xef, (byte) 0xbb, (byte) 0xbf};
         String content = cities.stream()
                 .map(city -> "城市：" + city + "")
                 .collect(Collectors.joining("\n"));
