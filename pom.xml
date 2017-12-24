@@ -10,6 +10,7 @@
     <module>spring-boot-mybatis-xml</module>
     <module>spring-boot-email</module>
     <module>spring-boot-restful</module>
+    <module>spring-boot-file</module>
   </modules>
   <packaging>pom</packaging>
 
