@@ -58,9 +58,9 @@ public class RestfulController {
     }
 
     /**
-     * curl -i -X POST -H "Content-type:application/json" -d '[{"country": "Japan", "name": "Tokyo", "state": "", "map": "35.689488, 139.69176"}, {"country": "Spain", "name": "Barcelona", "state": "Catalunya", "map": "41.387917, 2.169919"}]' http://localhost:8080/restful/list
+     * curl -i -X POST -H "Content-type:application/json" -d '[{"country": "Japan", "name": "Tokyo", "state": "", "map": "35.689488, 139.69176"}, {"country": "Spain", "name": "Barcelona", "state": "Catalunya", "map": "41.387917, 2.169919"}]' http://localhost:8080/restful/list/map
      */
-    @RequestMapping(value = "/list", method = RequestMethod.POST)
+    @RequestMapping(value = "/list/map", method = RequestMethod.POST)
     public int addOneByListMap(@RequestBody List<Map<String, String>> list){
         List<City> cities = new ArrayList<>();
         for (Map<String, String> map : list) {
@@ -75,9 +75,18 @@ public class RestfulController {
     }
 
     /**
-     * curl -i -X POST -H "Content-type:application/json" -d '["one", "two", "three"]' http://localhost:8080/restful/array
+     * curl -i -X POST -H "Content-type:application/json" -d '[{"country": "Japan", "name": "Tokyo", "state": "", "map": "35.689488, 139.69176"}, {"country": "Spain", "name": "Barcelona", "state": "Catalunya", "map": "41.387917, 2.169919"}]' http://localhost:8080/restful/list/object
      */
-    @RequestMapping(value = "/array", method = RequestMethod.POST)
+    @RequestMapping(value = "/list/object", method = RequestMethod.POST)
+    public List<City> addOneByListObject(@RequestBody List<City> cities){
+        System.out.print(cities);
+        return cities;
+    }
+
+    /**
+     * curl -i -X POST -H "Content-type:application/json" -d '["one", "two", "three"]' http://localhost:8080/restful/list/array
+     */
+    @RequestMapping(value = "/list/array", method = RequestMethod.POST)
     public int addOneByList(@RequestBody List<String> list){
         System.out.println(list);
         return 1;
