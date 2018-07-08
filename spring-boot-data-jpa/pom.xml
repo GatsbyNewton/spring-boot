@@ -10,7 +10,7 @@
   <artifactId>spring-boot-data-jpa</artifactId>
   <packaging>jar</packaging>
 
-  <name>springboot-jpa</name>
+  <name>spring-boot-jpa</name>
   <url>http://maven.apache.org</url>
 
   <properties>
