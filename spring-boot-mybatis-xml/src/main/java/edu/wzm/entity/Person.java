@@ -3,16 +3,9 @@ package edu.wzm.entity;
 public class Person {
 
     private int id;
-    private String name;
+    private String firstName;
+    private String lastName;
     private int age;
-
-    public Person() {
-    }
-
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
 
     public int getId() {
         return id;
@@ -22,12 +15,20 @@ public class Person {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getAge() {
@@ -40,6 +41,11 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person: [name=" + name + ", age=" + age + "]";
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

@@ -20,4 +20,9 @@ public class PersonController {
     public String getById(@RequestParam("id") int id){
         return personService.getById(id).toString();
     }
+
+    @RequestMapping("/all")
+    public Object getAll(){
+        return personService.getAll();
+    }
 }

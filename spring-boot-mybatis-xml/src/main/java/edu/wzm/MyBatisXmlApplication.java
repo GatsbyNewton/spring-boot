@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("edu.wzm.dao")
-public class PersonApplication {
+public class MyBatisXmlApplication {
     public static void main(String[] args){
-        SpringApplication.run(PersonApplication.class);
+        SpringApplication.run(MyBatisXmlApplication.class);
     }
 }
