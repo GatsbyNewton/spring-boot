@@ -16,13 +16,7 @@
   </modules>
   <packaging>pom</packaging>
 
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.5.6.RELEASE</version>
-  </parent>
-
-  <name>springboot</name>
+  <name>spring-boot</name>
   <url>http://maven.apache.org</url>
 
   <properties>
