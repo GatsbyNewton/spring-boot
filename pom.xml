@@ -13,6 +13,8 @@
     <module>spring-boot-file</module>
     <module>spring-boot-schedule</module>
     <module>spring-boot-async</module>
+    <module>spring-boot-rename-request-param</module>
+    <module>spring-boot-actuator</module>
   </modules>
   <packaging>pom</packaging>
 
