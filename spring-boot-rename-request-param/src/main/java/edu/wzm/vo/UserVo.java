@@ -3,6 +3,10 @@ package edu.wzm.vo;
 import com.alibaba.fastjson.annotation.JSONField;
 import edu.wzm.tool.ParamAlias;
 
+/**
+ * @author Jimmy Wong
+ * @description 重命名 POST、GET 等请求传 key-value 的参数转换成的实体类
+ */
 public class UserVo {
 
     private String name;
