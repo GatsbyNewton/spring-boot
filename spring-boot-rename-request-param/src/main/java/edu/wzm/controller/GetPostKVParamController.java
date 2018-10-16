@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class GetPostKVParamController {
-
     /**
      * curl -d 'name=jimmy&country_code=zh_CN' http://localhost:8080/post_kv
      * curl -d 'name=jimmy&countryCode=zh_CN' http://localhost:8080/post_kv
