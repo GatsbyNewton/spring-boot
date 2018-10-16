@@ -5,8 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Hello world!
- *
+ * @author Jimmy Wong
+ * @description https://www.cnblogs.com/davidwang456/p/6781731.html
  */
 @SpringBootApplication
 @MapperScan(value = "edu.wzm.dao")
