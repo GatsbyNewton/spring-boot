@@ -12,8 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * @author Jimmy Wong
+ */
 @RestController
-public class PersonController {
+public class PostJsonParamController {
 
     @Autowired
     private PersonService personService;
