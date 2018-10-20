@@ -3,6 +3,7 @@ package edu.wzm.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import edu.wzm.entity.Person;
+import edu.wzm.query.PersonPost;
 import edu.wzm.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,8 +30,9 @@ public class PostJsonParamController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public Object addPerson(@RequestBody Person person){
+    public Object addPerson(@RequestBody PersonPost person){
         System.out.println(person);
+
         int result = personService.addPerson(person);
         return result;
     }

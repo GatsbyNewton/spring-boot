@@ -2,7 +2,7 @@ package edu.wzm.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import edu.wzm.vo.UserVo;
+import edu.wzm.query.UserGet;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +20,7 @@ public class GetPostKVParamController {
      * @return
      */
     @RequestMapping(value = "/post_kv", method = RequestMethod.POST)
-    public String post(UserVo user){
+    public String post(UserGet user){
         return JSON.toJSONString(user, SerializerFeature.WriteMapNullValue);
     }
 
@@ -31,7 +31,7 @@ public class GetPostKVParamController {
      * @return
      */
     @RequestMapping(value = "/get_kv", method = RequestMethod.GET)
-    public String get(UserVo user){
+    public String get(UserGet user){
         return JSON.toJSONString(user, SerializerFeature.WriteMapNullValue);
     }
 }

@@ -1,13 +1,15 @@
-package edu.wzm.vo;
+package edu.wzm.query;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import edu.wzm.tool.ParamAlias;
+import org.springframework.context.annotation.Description;
 
 /**
  * @author Jimmy Wong
  * @description 重命名 POST、GET 等请求传 key-value 的参数转换成的实体类
  */
-public class UserVo {
+@Description("GET、POST等的key-value型下划线/驼峰请求参数转成之后的驼峰命名属性的POJO")
+public class UserGet {
 
     private String name;
 
@@ -33,7 +35,7 @@ public class UserVo {
 
     @Override
     public String toString() {
-        return "UserVo{" +
+        return "UserGet{" +
                 "name='" + name + '\'' +
                 ", countryCode='" + countryCode + '\'' +
                 '}';
