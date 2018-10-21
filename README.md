@@ -1,7 +1,7 @@
 # springboot
 Learning Spring-Boot and integrating Spring-Boot with something
 
-项目 | 说明
+Project | Description
 ---|---
 [spring-boot-actuator](https://github.com/GatsbyNewton/spring-boot/tree/master/spring-boot-actuator) | Spring Boot Actuator
 [spring-boot-aop](https://github.com/GatsbyNewton/spring-boot/tree/master/spring-boot-aop) | Spring Boot AOP
