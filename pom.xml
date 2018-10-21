@@ -15,6 +15,7 @@
     <module>spring-boot-async</module>
     <module>spring-boot-rename-request-param</module>
     <module>spring-boot-actuator</module>
+      <module>spring-boot-retry</module>
   </modules>
   <packaging>pom</packaging>
 
