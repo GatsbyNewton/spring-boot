@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.wzm</groupId>
-    <artifactId>spring-boot-annotation-unitied-exception</artifactId>
+    <artifactId>spring-boot-annotation-unified-exception</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>spring-boot-annotation-unitied-exception</name>
+    <name>spring-boot-annotation-unified-exception</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
