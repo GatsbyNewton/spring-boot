@@ -16,6 +16,8 @@
     <module>spring-boot-rename-request-param</module>
     <module>spring-boot-actuator</module>
       <module>spring-boot-retry</module>
+      <module>spring-boot-aop-unified-exception</module>
+      <module>spring-boot-annotation-unitied-exception</module>
   </modules>
   <packaging>pom</packaging>
 
