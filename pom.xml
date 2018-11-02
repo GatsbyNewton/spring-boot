@@ -18,6 +18,7 @@
     <module>spring-boot-retry</module>
     <module>spring-boot-aop-unified-exception</module>
     <module>spring-boot-annotation-unified-exception</module>
+      <module>spring-boot-mybatis-pagehelper</module>
   </modules>
   <packaging>pom</packaging>
 
