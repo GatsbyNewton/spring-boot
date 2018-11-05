@@ -1,0 +1,16 @@
+# Database
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+  application:
+    name: mybatis-pagehelper
+
+mybatis:
+  type-aliases-package: edu.wzm.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    # 打印 SQL 语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
