@@ -21,6 +21,8 @@
       <module>spring-boot-mybatis-pagehelper</module>
       <module>spring-boot-log4j2</module>
     <module>spring-boot-log4j2-aop</module>
+      <module>spring-boot-pojo-autowired</module>
+      <module>spring-boot-command-runner</module>
   </modules>
   <packaging>pom</packaging>
 
