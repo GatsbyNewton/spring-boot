@@ -23,6 +23,7 @@
     <module>spring-boot-log4j2-aop</module>
       <module>spring-boot-pojo-autowired</module>
       <module>spring-boot-command-runner</module>
+      <module>spring-boot-quartz</module>
   </modules>
   <packaging>pom</packaging>
 
