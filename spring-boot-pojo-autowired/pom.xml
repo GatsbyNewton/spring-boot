@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-multi-datasource</artifactId>
+    <artifactId>spring-boot-pojo-autowired</artifactId>
 
     <name>spring-boot-pojo-autowired</name>
     <!-- FIXME change it to the project's website -->
