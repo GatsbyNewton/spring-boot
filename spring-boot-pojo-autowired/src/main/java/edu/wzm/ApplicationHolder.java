@@ -8,18 +8,18 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 /**
- * 在没有注入Spring容器的类中，用@Autowired在该类中注入已注入Spring容器的Bean。
+ * 在没有注入Spring容器的类中，注入已@Component的Java类。
  */
 @Component
 public class ApplicationHolder implements ApplicationContextAware {
-    public final static Logger LOG = LoggerFactory.getLogger(ApplicationHolder.class);
+    public final static Logger LOGGER = LoggerFactory.getLogger(ApplicationHolder.class);
     
     private static ApplicationContext applicationContext = null;
     
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         ApplicationHolder.applicationContext  = applicationContext;
-        LOG.info("======== set applicaton context = " + ApplicationHolder.applicationContext + "========");
+        LOGGER.info("======== set applicaton context = " + ApplicationHolder.applicationContext + "========");
     }
 
     /**
