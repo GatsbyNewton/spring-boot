@@ -6,24 +6,25 @@
     <artifactId>spring-boot</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spring-boot-data-jpa</module>
-        <module>spring-boot-mybatis-xml</module>
-        <module>spring-boot-email</module>
-        <module>spring-boot-restful</module>
-        <module>spring-boot-file</module>
-        <module>spring-boot-schedule</module>
-        <module>spring-boot-async</module>
-        <module>spring-boot-rename-request-param</module>
         <module>spring-boot-actuator</module>
-        <module>spring-boot-retry</module>
-        <module>spring-boot-aop-unified-exception</module>
         <module>spring-boot-annotation-unified-exception</module>
-        <module>spring-boot-mybatis-pagehelper</module>
+        <module>spring-boot-aop</module>
+        <module>spring-boot-aop-unified-exception</module>
+        <module>spring-boot-async</module>
+        <module>spring-boot-command-runner</module>
+        <module>spring-boot-data-jpa</module>
+        <module>spring-boot-email</module>
+        <module>spring-boot-file</module>
         <module>spring-boot-log4j2</module>
         <module>spring-boot-log4j2-aop</module>
-        <module>spring-boot-pojo-autowired</module>
-        <module>spring-boot-command-runner</module>
         <module>spring-boot-multi-datasource</module>
+        <module>spring-boot-mybatis-pagehelper</module>
+        <module>spring-boot-mybatis-xml</module>
+        <module>spring-boot-pojo-autowired</module>
+        <module>spring-boot-rename-request-param</module>
+        <module>spring-boot-restful</module>
+        <module>spring-boot-retry</module>
+        <module>spring-boot-schedule</module>
     </modules>
     <packaging>pom</packaging>
 
