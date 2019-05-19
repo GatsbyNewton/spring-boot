@@ -23,6 +23,7 @@
         <module>spring-boot-log4j2-aop</module>
         <module>spring-boot-pojo-autowired</module>
         <module>spring-boot-command-runner</module>
+        <module>spring-boot-multi-datasource</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -51,6 +52,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
