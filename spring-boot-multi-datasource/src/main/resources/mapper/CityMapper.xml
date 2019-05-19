@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.wzm.dao.slaver.CityDao">
+    <select id="findById" resultMap="CityMap">
+      SELECT *
+      FROM city
+      WHERE id = #{id}
+    </select>
+
+    <resultMap id="CityMap" type="edu.wzm.entity.City">
+        <id column="id" property="id" javaType="long"/>
+        <result column="name" property="name" javaType="String"/>
+    </resultMap>
+</mapper>
