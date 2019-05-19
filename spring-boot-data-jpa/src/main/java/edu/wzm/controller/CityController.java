@@ -25,6 +25,17 @@ public class CityController {
     @Autowired
     private CityService cityService;
 
+    @RequestMapping(value = "/insert", method= RequestMethod.GET)
+    public Object insert(){
+        City city = new City();
+        city.setName("LA");
+        city.setCountry("USA");
+        city.setMap("MAP");
+        city.setState("CA");
+
+        return cityService.insert(city);
+    }
+
     @RequestMapping(value = "/query", method= RequestMethod.GET, produces = "application/json;charset=UTF-8")
     public String find(){
         return cityService.findAl().stream().findFirst().get().toString();

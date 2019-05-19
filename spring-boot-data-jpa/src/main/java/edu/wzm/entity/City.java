@@ -1,5 +1,7 @@
 package edu.wzm.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -8,6 +10,7 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "city")
+@Data
 public class City implements Serializable {
 
     @Id
@@ -25,57 +28,4 @@ public class City implements Serializable {
 
     @Column(name = "map", nullable = false)
     private String map;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getMap() {
-        return map;
-    }
-
-    public void setMap(String map) {
-        this.map = map;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder("City (")
-                .append("id=" + id)
-                .append("name=" + name)
-                .append("state=" + state)
-                .append("country=" + country)
-                .append("map=" + map)
-                .append(")");
-
-        return sb.toString();
-    }
 }

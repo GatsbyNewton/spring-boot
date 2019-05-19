@@ -22,8 +22,11 @@ public class CityService {
     @Autowired
     private CityRepository cityRepository;
 
-    public void insert(City city){
-        cityRepository.save(city);
+    public City insert(City city){
+        /** JPA的save()方法会返回插入数据的主键 */
+        cityRepository.saveAndFlush(city);
+
+        return city;
     }
 
     public void batchInsert(List<City> cities){
