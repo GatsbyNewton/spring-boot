@@ -4,6 +4,7 @@ import net.javacrumbs.shedlock.core.LockProvider;
 import net.javacrumbs.shedlock.provider.redis.jedis.JedisLockProvider;
 import net.javacrumbs.shedlock.spring.ScheduledLockConfiguration;
 import net.javacrumbs.shedlock.spring.ScheduledLockConfigurationBuilder;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -14,6 +15,27 @@ import java.time.Duration;
 
 @Configuration
 public class ShedLockConfig {
+//    redis:
+//    server: 127.0.0.1
+//    port: 6379
+//    timeout: 10
+//    maxTotal: 10
+//    maxWaitTime: 10
+
+    @Value("${redis.server}")
+    private String redisServer;
+
+    @Value("${redis.port}")
+    private int port;
+
+    @Value("${redis.timeout}")
+    private int timeout;
+
+    @Value("${redis.maxTotal}")
+    private int maxTotal;
+
+    @Value("${redis.maxWaitTime}")
+    private int maxWaitTime;
 
     @Bean
     public ScheduledLockConfiguration scheduledLockConfiguration(LockProvider lockProvider) {
@@ -32,15 +54,11 @@ public class ShedLockConfig {
     @Primary
     @Bean
     public JedisPool jedisPool() {
-        String host = "127.0.0.1";
-        int port = 6379;
-        int timeout = 10;
-        int maxTotal = 10;
-        int maxWaitTime = 10;
         JedisPoolConfig config = new JedisPoolConfig();
         config.setMaxTotal(maxTotal);
         config.setMaxWaitMillis(maxWaitTime);
-        JedisPool jedisPool = new JedisPool(config, host, port, timeout);
+        JedisPool jedisPool = new JedisPool(config, redisServer, port, timeout);
+
         return jedisPool;
     }
 }

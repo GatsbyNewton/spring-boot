@@ -1,0 +1,6 @@
+redis:
+  server: 127.0.0.1
+  port: 6379
+  timeout: 10
+  maxTotal: 10
+  maxWaitTime: 10
