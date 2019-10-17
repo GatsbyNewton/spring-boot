@@ -28,6 +28,7 @@
         <module>spring-boot-quartz</module>
         <module>spring-boot-api-version-control</module>
         <module>spring-boot-scheduledlock-redis</module>
+        <module>spring-boot-scheduledlock-mysql</module>
     </modules>
     <packaging>pom</packaging>
 
