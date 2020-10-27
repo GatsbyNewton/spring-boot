@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.wzm.dao.replica.ProductDao">
+
+    <select id="findById" resultMap="ProductMap">
+      SELECT *
+      FROM product
+      WHERE id = #{id}
+    </select>
+
+    <resultMap id="ProductMap" type="edu.wzm.entity.Product">
+        <id column="id" property="id" javaType="Integer"/>
+        <result column="prod_name" property="prodName" javaType="String"/>
+        <result column="prod_price" property="prodPrice" javaType="Float"/>
+    </resultMap>
+</mapper>

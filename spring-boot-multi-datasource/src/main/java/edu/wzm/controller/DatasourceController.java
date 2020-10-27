@@ -14,7 +14,8 @@ public class DatasourceController {
 
     @RequestMapping("/source")
     public Object get(@RequestParam("personId") long personId,
-                      @RequestParam("cityId") int cityId){
-        return dataSourceService.find(personId, cityId);
+                      @RequestParam("cityId") int cityId,
+                      @RequestParam("productId") int productId){
+        return dataSourceService.find(personId, cityId, productId);
     }
 }
