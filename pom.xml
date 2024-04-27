@@ -29,6 +29,7 @@
         <module>spring-boot-api-version-control</module>
         <module>spring-boot-scheduledlock-redis</module>
         <module>spring-boot-scheduledlock-mysql</module>
+        <module>spring-boot-thrift</module>
     </modules>
     <packaging>pom</packaging>
 
