@@ -38,7 +38,7 @@ public class FileController {
     public ResponseEntity<byte[]> downloadCSV(@RequestParam("fileName") String fileName)throws IOException{
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Type", "text/csv;charset=UTF-8");
-        headers.setContentDispositionFormData("attachment;filename", fileName, Charset.forName("UTF-8"));
+        headers.setContentDispositionFormData("attachment;filename", fileName);
 
         List<City> cities = fileService.findAll();
         /** header of BOM_UTF8 */

@@ -1,0 +1,8 @@
+thrift:
+  # thrift 通信端口
+  port: 6666
+  # work 最小线程
+  minWorkerThreads: 10
+  # work 最大线程
+  maxWorkerThreads: 100
+  host: localhost
