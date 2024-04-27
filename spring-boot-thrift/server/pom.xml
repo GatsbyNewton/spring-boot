@@ -12,10 +12,21 @@
 
     <artifactId>server</artifactId>
 
+    <name>spring-boot-restful</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://maven.apache.org</url>
+
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <libthrift.version>0.16.0</libthrift.version>
     </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.thrift/libthrift -->
+        <dependency>
+            <groupId>org.apache.thrift</groupId>
+            <artifactId>libthrift</artifactId>
+            <version>${libthrift.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

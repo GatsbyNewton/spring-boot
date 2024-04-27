@@ -1,7 +1,5 @@
 package edu.wzm.config;
 
-import edu.wzm.service.Hello2Service;
-import edu.wzm.service.Hello2ServiceImpl;
 import edu.wzm.service.HelloService;
 import edu.wzm.service.HelloServiceImpl;
 import lombok.extern.slf4j.Slf4j;
@@ -30,9 +28,6 @@ public class RpcThriftServer {
 
     @Autowired
     private HelloServiceImpl helloService;
-
-    @Autowired
-    private Hello2ServiceImpl hello2Service;
 
     /**
      * 定义处理器工厂

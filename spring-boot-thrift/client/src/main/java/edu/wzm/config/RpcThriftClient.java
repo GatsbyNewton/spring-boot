@@ -1,6 +1,5 @@
 package edu.wzm.config;
 
-import edu.wzm.service.Hello2Service;
 import edu.wzm.service.HelloService;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.transport.TSocket;
@@ -16,8 +15,6 @@ import org.apache.thrift.transport.layered.TFramedTransport;
  */
 public class RpcThriftClient {
     private HelloService.Client client;
-
-    private Hello2Service.Client client2;
 
     private TCompactProtocol protocol; //压缩协议
 
@@ -52,19 +49,11 @@ public class RpcThriftClient {
         transport =new TFramedTransport(new TSocket(host, port));
         protocol = new TCompactProtocol(transport);
         client = new HelloService.Client(protocol);
-
-        client2 = new Hello2Service.Client(protocol);
     }
-
 
     public HelloService.Client getRPCThriftService() {
         return client;
     }
-
-    public Hello2Service.Client getRPCThriftService2() {
-        return client2;
-    }
-
 
     /**
      * 打开
@@ -73,7 +62,6 @@ public class RpcThriftClient {
     public void open() throws TTransportException {
         transport.open();
     }
-
 
     /**
      * 关闭
