@@ -30,6 +30,7 @@
         <module>spring-boot-scheduledlock-redis</module>
         <module>spring-boot-scheduledlock-mysql</module>
         <module>spring-boot-thrift</module>
+        <module>spring-boot-swagger</module>
     </modules>
     <packaging>pom</packaging>
 
